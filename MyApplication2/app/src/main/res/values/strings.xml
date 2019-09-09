@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+
+    <string name="one">01</string>
+    <string name="two">02</string>
+    <string name="three">03</string>
+    <string name="four">04</string>
+    <string name="five">05</string>
+    <string name="six">06</string>
+    <string name="seven">07</string>
+
+</resources>
