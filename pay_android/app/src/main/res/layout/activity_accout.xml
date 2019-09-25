@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.AccoutActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appHeaderColor">
+
+        <ImageView style="@style/title_img" />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_weight="1"
+            android:text="账户信息" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="#ddd"
+            android:text="基本信息" />
+
+        <LinearLayout
+            android:id="@+id/account_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                style="@style/me_item_text"
+                android:text="店铺Logo" />
+
+            <TextView
+                style="@style/me_item_text"
+                android:gravity="center_vertical|right"
+                android:text="已上传" />
+
+            <ImageView
+                android:id="@+id/ac_logo"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:padding="@dimen/dp_15"
+                android:src="@drawable/icon" />
+
+            <ImageView style="@style/btn_arrow" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ddd" />
+
+
+        <LinearLayout
+            android:id="@+id/account_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/me_item_text"
+                android:gravity="center_vertical|left"
+                android:text="店铺图片" />
+
+            <TextView
+                style="@style/me_item_text"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="已上传" />
+
+            <ImageView
+                android:id="@+id/ac_icon"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:padding="@dimen/dp_15"
+                android:src="@drawable/icon_bg_defult" />
+
+            <ImageView style="@style/btn_arrow" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ddd"
+            android:text="基本信息" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="#ddd"
+            android:text="基本信息" />
+
+        <LinearLayout
+            android:id="@+id/account_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/me_item_text"
+                android:gravity="center_vertical|left"
+                android:text="店铺名称" />
+
+            <TextView
+                android:id="@+id/ac_name"
+                style="@style/me_item_text"
+                android:gravity="center_vertical|right"
+                android:text="老太太餐馆" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ddd"
+            android:text="基本信息" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/me_item_text"
+                android:gravity="center_vertical|left"
+                android:text="店铺联系电话" />
+
+            <EditText
+                android:id="@+id/ac_phone"
+                style="@style/me_item_text"
+                android:background="@drawable/bg_layout"
+                android:gravity="center_vertical|right"
+                android:hint="固话(请加区号)/手机号"
+                android:textColorHint="@color/textColor_grey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ddd"
+            android:text="基本信息" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/me_item_text"
+                android:gravity="center_vertical|left"
+                android:text="店铺地址" />
+
+            <TextView
+                android:id="@+id/ac_address"
+                style="@style/me_item_text"
+                android:gravity="center_vertical|right"
+                android:text="通州区砖厂南里36" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ddd"
+            android:text="意见反馈" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

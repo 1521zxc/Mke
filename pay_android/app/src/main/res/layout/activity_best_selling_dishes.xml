@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.BestSellingDishesActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appHeaderColor">
+
+        <ImageView style="@style/title_img" />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_weight="1"
+            android:text="畅销菜品" />
+
+        <TextView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="刷新"
+            android:textColor="@color/textColor_white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textColor_white">
+
+        <LinearLayout
+            android:id="@+id/BestSelling_day_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/BestSelling_day_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="日" />
+
+            <TextView
+                android:id="@+id/BestSelling_day_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/appHeaderColor1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BestSelling_week_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/BestSelling_week_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周" />
+
+            <TextView
+                android:id="@+id/BestSelling_week_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BestSelling_month_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/BestSelling_month_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="月" />
+
+            <TextView
+                android:id="@+id/BestSelling_month_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BestSelling_ji_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/BestSelling_ji_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="季" />
+
+            <TextView
+                android:id="@+id/BestSelling_ji_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BestSelling_year_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/BestSelling_year_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="年" />
+
+            <TextView
+                android:id="@+id/BestSelling_year_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/BestSelling_last_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="前一天" />
+
+        <TextView
+            android:id="@+id/BestSelling_time_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="3"
+            android:background="@color/textColor_white"
+            android:gravity="center"
+            android:text="2018年10月17日" />
+
+        <TextView
+            android:id="@+id/BestSelling_h_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="后一天" />
+    </LinearLayout>
+
+    <com.example.epay.view.HorizontalListView
+        android:id="@+id/best_selling_horizontal_listView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"></com.example.epay.view.HorizontalListView>
+
+    <LinearLayout
+        android:id="@+id/best_selling_dishes_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/best_selling_dishes_top1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_30"
+            android:layout_weight="1"
+            android:background="@drawable/corner_white_stroke3"
+            android:gravity="center"
+            android:text="TOP10" />
+
+        <TextView
+            android:id="@+id/best_selling_dishes_top2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_30"
+            android:layout_weight="1"
+            android:background="@drawable/corner_white_stroke4"
+            android:gravity="center"
+            android:text="TOP20" />
+
+        <TextView
+            android:id="@+id/best_selling_dishes_top3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_30"
+            android:layout_weight="1"
+            android:background="@drawable/corner_white_stroke4"
+            android:gravity="center"
+            android:text="TOP30" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <lecho.lib.hellocharts.view.PieChartView
+                    android:id="@+id/best_selling_dishes_barChart"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_180"
+                    android:layout_weight="3"></lecho.lib.hellocharts.view.PieChartView>
+
+                <com.example.epay.view.EPayListView
+                    android:id="@+id/best_selling_dishes_barChart_listView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></com.example.epay.view.EPayListView>
+            </LinearLayout>
+
+            <com.example.epay.view.EPayListView
+                android:id="@+id/best_selling_dishes_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.epay.view.EPayListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

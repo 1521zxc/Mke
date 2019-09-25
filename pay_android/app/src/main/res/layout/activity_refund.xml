@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/refund_layout"
+    tools:context="com.example.epay.activity.RefundActivity">
+    <FrameLayout  android:id="@+id/scan_top" android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView style="@style/title_img"/>
+        <TextView  android:text="退款" style="@style/title_text"  android:layout_weight="1"/>
+        <TextView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <EditText
+            android:id="@+id/refund_yy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_24"
+            android:hint="请输入退款原因，默认为退菜"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_20"
+        android:background="@color/textColor_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款金额"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <EditText
+                android:id="@+id/refund_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_24"
+                android:hint="请输入退款金额"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/refund_money_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最大可退款金额"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/refund_tui"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/dp_20"
+        android:text="确定"/>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout android:background="#325dc0" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img"/>
+
+        <TextView android:text="店铺签约信息" style="@style/title_text"  android:layout_weight="1"/>
+
+        <ImageView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" android:layout_gravity="right"/>
+
+    </FrameLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:clickable="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:paddingLeft="@dimen/dp_20"
+            android:text="费率"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ddd"
+            android:text="基本信息" />
+        <com.example.epay.view.EPayListView
+            android:id="@+id/cotract_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#ddd"
+            android:dividerHeight="1px" >
+        </com.example.epay.view.EPayListView>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ddd"
+            android:text="基本信息" />
+        <TextView  android:layout_marginTop="@dimen/dp_30" android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" android:text="基本信息"/>
+
+        <FrameLayout android:id="@+id/xieyi" android:layout_height="wrap_content" android:layout_width="fill_parent" >
+
+
+        <TextView  android:text="协议与条款" style="@style/me_item_text"/>
+
+        <ImageView style="@style/btn_arrow"/>
+
+    </FrameLayout>
+        <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" android:text="基本信息"/>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

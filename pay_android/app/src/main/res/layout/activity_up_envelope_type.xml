@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.epay.activity.UpEnvelopeActivity"
+    android:orientation="vertical">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="@dimen/dp_60" android:layout_width="fill_parent">
+
+        <ImageView  style="@style/title_img"/>
+
+        <TextView android:text="选择创建红包类型" style="@style/title_text"  android:layout_weight="1"/>
+
+        <TextView
+            android:layout_height="@dimen/dp_25"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_17.5"
+            android:layout_marginRight="@dimen/dp_17.5"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/envelope_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+        </androidx.viewpager.widget.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/envelope_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.StoredMoneyActivity">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img"/>
+
+        <TextView android:id="@+id/stored_title" android:text="本次活动储值金额" style="@style/title_text"  android:layout_weight="1"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp_17.5"
+            android:layout_marginRight="@dimen/dp_17.5"
+            android:layout_gravity="right"
+            android:textColor="@color/textColor_white"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal"
+        android:background="@color/appHeaderColor2"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/textColor_white"
+            android:text="储值赠送：￥0"
+            android:gravity="center_vertical|left"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/textColor_white"
+            android:gravity="center_vertical|right"
+            android:text="储值：￥0"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/stored_none"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_80"
+        android:paddingBottom="@dimen/dp_50"
+        android:text="您还没有会员储值哦！"
+        android:drawableTop="@drawable/change_icon"/>
+</LinearLayout>

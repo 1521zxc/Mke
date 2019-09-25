@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.UpServiceActivity">
+
+    <FrameLayout android:background="#325dc0" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView  style="@style/title_img"/>
+
+        <TextView android:text="升级到高级服务" style="@style/title_text"  android:layout_weight="1"/>
+
+        <TextView android:layout_height="fill_parent" android:gravity="center" android:layout_width="@dimen/dp_60"  android:layout_gravity="right"  />
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_180"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/up_service"
+                android:padding="@dimen/dp_20">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:src="@drawable/service_g"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textColor="@color/textColor_white"
+                    android:text="12个月高级服务"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/textColor_white"
+                    android:text="有效期至2018-10-21"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/bg_grey"/>
+            <TextView
+                android:id="@+id/service_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:background="@color/textColor_white"
+                android:gravity="center_vertical|left"
+                android:text="使用优惠码"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/bg_grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:background="@color/textColor_white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:textColor="#fb5c5c"
+                    android:layout_weight="1"
+                    android:text="实付"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:textColor="#fb5c5c"
+                    android:textSize="20sp"
+                    android:text="18000元"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/bg_grey"/>
+    <include android:id="@+id/up_service_include" layout="@layout/advance_content" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/up_service_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="#fb5c5c"
+        android:gravity="center"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/textColor_white"
+        android:text="立即支付"/>
+</LinearLayout>

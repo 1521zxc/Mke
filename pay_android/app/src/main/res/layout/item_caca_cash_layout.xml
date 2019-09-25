@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <TextView
+        android:id="@+id/item_cata_cash_name"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="4"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center_vertical">
+        <com.example.epay.view.HorizontalProgressBarWithNumber
+            android:id="@+id/item_cata_cash_ba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:progress_reached_bar_height="10dp"
+            app:progress_unreached_bar_height="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

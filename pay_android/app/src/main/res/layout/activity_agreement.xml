@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.AgreementActivity">
+
+    <FrameLayout  android:id="@+id/scan_top" android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img" />
+
+        <TextView  android:text="协议与条款" style="@style/title_text"  android:layout_weight="1"/>
+
+        <ImageView android:visibility="invisible" android:src="@drawable/icon" android:layout_height="@dimen/dp_25"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_17.5"
+            android:layout_marginRight="@dimen/dp_17.5"
+            android:layout_gravity="right"
+            />
+    </FrameLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd"
+        android:text="基本信息"
+        android:layout_marginTop="@dimen/dp_30"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/epa_my_service"
+            style="@style/me_item_text"
+            android:text="微信支付解决方案条款" />
+
+        <ImageView style="@style/btn_arrow" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd"
+        android:text="基本信息" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/epa_recom"
+            style="@style/me_item_text"
+            android:text="支付宝支付解决方案条款" />
+
+        <ImageView style="@style/btn_arrow" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd"
+        android:text="基本信息" />
+
+</LinearLayout>

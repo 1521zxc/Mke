@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.SetPointsActivity">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView style="@style/title_img"/>
+        <TextView android:id="@+id/code_title" android:text="会员集点" style="@style/title_text"  android:layout_weight="1"/>
+        <ImageView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" android:layout_gravity="right"/>
+    </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appHeaderColor1"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor_white"
+                    android:text="设置目标点数"/>
+                <com.example.epay.view.LineRadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:paddingRight="@dimen/dp_30"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingBottom="@dimen/dp_5">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:textColor="@color/textColor_white"
+                            android:background="@drawable/corner_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="1"/>
+                        <RadioButton
+                            android:id="@+id/radio2"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:textColor="@color/textColor_white"
+                            android:background="@drawable/corner_selector"
+                            android:button="@null"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:gravity="center"
+                            android:text="2"/>
+                        <RadioButton
+                            android:id="@+id/radio3"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:textColor="@color/textColor_white"
+                            android:background="@drawable/corner_selector"
+                            android:button="@null"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:gravity="center"
+                            android:text="3"/>
+                        <RadioButton
+                            android:id="@+id/radio4"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:textColor="@color/textColor_white"
+                            android:background="@drawable/corner_selector"
+                            android:button="@null"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:gravity="center"
+                            android:text="4"/>
+                        <RadioButton
+                            android:id="@+id/radio5"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:textColor="@color/textColor_white"
+                            android:background="@drawable/corner_selector"
+                            android:button="@null"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:gravity="center"
+                            android:text="5"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/radio6"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:textColor="@color/textColor_white"
+                            android:background="@drawable/corner_selector"
+                            android:gravity="center"
+                            android:button="@null"
+                            android:text="6"/>
+                        <RadioButton
+                            android:id="@+id/radio7"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:textColor="@color/textColor_white"
+                            android:background="@drawable/corner_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:text="7"/>
+                        <RadioButton
+                            android:id="@+id/radio8"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:textColor="@color/textColor_white"
+                            android:background="@drawable/corner_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:text="8"/>
+                        <RadioButton
+                            android:id="@+id/radio9"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:textColor="@color/textColor_white"
+                            android:background="@drawable/corner_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:text="9"/>
+                        <RadioButton
+                            android:id="@+id/radio10"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:textColor="@color/textColor_white"
+                            android:background="@drawable/corner_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:text="10"/>
+                    </LinearLayout>
+                </com.example.epay.view.LineRadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor_white"
+                    android:text="骏骐大数据分析表明，选择5点可使回头客明显增加，活动效果更优！"/>
+            </LinearLayout>
+            <LinearLayout  android:orientation="horizontal" android:background="#fff" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+                <TextView android:text="集点条件"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="支付满"/>
+                <EditText android:id="@+id/set_point_money" android:layout_width="@dimen/dp_40" android:gravity="center" android:layout_height="match_parent"  android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout"  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="元可集一个点"/>
+            </LinearLayout>
+            <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />
+            <CheckBox
+                android:id="@+id/c0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:padding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:background="#fff"
+                android:button="@null"
+                android:text="一次付款可以集多点"/>
+
+
+            <TextView android:background="@color/bg_grey" android:layout_height="@dimen/dp_8" android:layout_width="fill_parent" />
+            <LinearLayout  android:orientation="horizontal" android:background="#fff" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+                <TextView android:text="礼品名称"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+
+                <EditText android:id="@+id/set_point_name" style="@style/me_item_text40" android:gravity="center_vertical|right" android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout" android:hint="礼品名称" />
+
+            </LinearLayout>
+            <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />
+            <LinearLayout  android:orientation="horizontal" android:background="#fff" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+                <TextView android:text="礼品价格"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+                <EditText android:id="@+id/set_point_price" style="@style/me_item_text40" android:gravity="center_vertical|right" android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout" android:hint="礼品价格" />
+
+            </LinearLayout>
+
+            <TextView android:background="@color/bg_grey" android:layout_height="@dimen/dp_8" android:layout_width="fill_parent" />
+            <LinearLayout  android:orientation="horizontal" android:background="#fff" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+                <TextView android:text="活动开始日期"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+
+                <TextView android:id="@+id/set_point_start" style="@style/me_item_text40" android:gravity="center_vertical|right" android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout" android:text="2018-1-11" />
+
+            </LinearLayout>
+            <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />
+            <LinearLayout  android:orientation="horizontal" android:background="#fff" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+                <TextView android:text="活动截止日期"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+                <TextView android:id="@+id/set_point_end" style="@style/me_item_text40" android:gravity="center_vertical|right" android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout" android:text="2018-3-11"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:gravity="center"
+                android:background="@color/bg_grey"
+                android:text="会员在集点满额兑换礼品后，将自动重新集点"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/action_su"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="bottom"
+        android:background="#fb5c5c"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/textColor_white" />
+</LinearLayout>

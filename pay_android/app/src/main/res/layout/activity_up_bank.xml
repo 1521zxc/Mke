@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.UpBankActivity">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img"/>
+
+        <TextView android:text="更改收款账户" style="@style/title_text"  android:layout_weight="1"/>
+
+        <ImageView android:id="@+id/up_bank_help" android:src="@drawable/icon_help" android:layout_height="@dimen/dp_25"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_17.5"
+            android:layout_marginRight="@dimen/dp_17.5"
+            android:layout_gravity="right"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="horizontal" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:id="@+id/up_bank_type_layout" android:background="@color/textColor_white" android:layout_height="wrap_content" android:layout_width="fill_parent" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_60"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="账号类型"/>
+        <TextView
+            android:id="@+id/up_bank_type"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_60"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="对公"/>
+        <ImageView
+            style="@style/btn_arrow" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd"
+        android:text="基本信息" />
+    <LinearLayout
+        android:orientation="horizontal" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:background="@color/textColor_white" android:layout_height="wrap_content" android:layout_width="fill_parent" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_60"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="账号名称"/>
+        <TextView
+            android:id="@+id/up_bank_name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_60"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="账户名字"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd"
+        android:text="基本信息" />
+    <LinearLayout
+        android:orientation="horizontal" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:background="@color/textColor_white" android:layout_height="wrap_content" android:layout_width="fill_parent" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_60"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="新银行卡号"/>
+        <EditText
+            android:id="@+id/up_bank_code"
+            android:digits="0123456789"
+            android:hint="请输入新的银行卡号"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_60"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:background="@android:drawable/screen_background_light"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd"
+        android:text="基本信息" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/up_bank_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:background="@color/appHeaderColor"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/textColor_white"
+        android:textSize="@dimen/sp_20"/>
+</LinearLayout>

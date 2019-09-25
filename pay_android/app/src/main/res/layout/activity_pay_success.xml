@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.PaySuccessActivity">
+
+    <FrameLayout  android:id="@+id/scan_top" android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView style="@style/title_img"/>
+        <TextView  android:text="支付成功" style="@style/title_text"  android:layout_weight="1"/>
+        <ImageView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" android:layout_gravity="right"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_170"
+        android:background="#f4f4f4">
+        <TextView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:background="@drawable/corner_orange"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/ic_navigation_check"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />
+    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <TextView android:text="应收金额"  android:gravity="center_vertical|left" style="@style/me_item_text"/>
+
+        <TextView android:id="@+id/sucees_paid" style="@style/me_item_text" android:gravity="center_vertical|right" android:textColor="#ffb83c" android:text="22元" />
+
+    </LinearLayout>
+
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />
+
+    <LinearLayout  android:orientation="horizontal" android:gravity="center"
+        android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <TextView android:text="实收金额"  android:gravity="center_vertical|left"
+            style="@style/me_item_text"/>
+
+        <TextView  android:id="@+id/sucees_sale" style="@style/me_item_text" android:textColor="#ffb83c" android:gravity="center_vertical|right" android:text="22元" />
+
+    </LinearLayout>
+
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />
+    <LinearLayout
+        android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" >
+
+        <TextView android:text="支付确认码"   android:gravity="center_vertical|left"  style="@style/me_item_text"/>
+
+        <TextView
+            android:id="@+id/success_mq" style="@style/me_item_text" android:gravity="center_vertical|right" android:text=""  android:textSize="@dimen/sp_12"/>
+
+    </LinearLayout>
+
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent"/>
+    <TextView  android:layout_marginTop="@dimen/dp_20" android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" android:text="基本信息"/>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:visibility="gone">
+
+        <TextView  android:id="@+id/success_pay_type"   android:gravity="center_vertical|left"  style="@style/me_item_text"/>
+
+        <TextView
+            style="@style/me_item_text" android:gravity="center_vertical|right" android:textColor="#ffb83c" android:id="@+id/success_pay_info"   android:textSize="@dimen/sp_12"  />
+
+    </LinearLayout>
+
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" android:text="基本信息"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="可在会员管理中查看所有会员信息"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_40">
+        <TextView
+            android:id="@+id/sucees_qr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/textColor_white"
+            android:text="返回桌台管理"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:gravity="center"
+            android:background="@drawable/corner_red"
+            android:layout_marginRight="@dimen/dp_10"/>
+        <TextView
+            android:id="@+id/sucees_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/textColor_white"
+            android:gravity="center"
+            android:text="查看流水"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/corner_red"/>
+    </LinearLayout>
+
+</LinearLayout>

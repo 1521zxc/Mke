@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.StoredActivityActivity">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img"/>
+
+        <TextView android:text="会员储值" style="@style/title_text"  android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/stored_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp_17.5"
+            android:layout_marginRight="@dimen/dp_17.5"
+            android:layout_gravity="right"
+            android:textColor="@color/textColor_white"
+            />
+    </FrameLayout>
+    <LinearLayout  android:orientation="horizontal" android:background="#fff" android:layout_marginTop="@dimen/dp_20" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <TextView android:text="状态"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+
+        <TextView  style="@style/me_item_text40" android:gravity="center_vertical|right"  android:background="@drawable/bg_layout" android:textColor="#fd5c5c" android:text="已结束" />
+
+    </LinearLayout>
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />
+    <LinearLayout  android:orientation="horizontal" android:background="#fff" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <TextView android:text="活动时间"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+        <TextView  style="@style/me_item_text40" android:gravity="center_vertical|right" android:background="@drawable/bg_layout" android:text="2018.05.11-2018.0721"/>
+
+    </LinearLayout>
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />
+    <LinearLayout  android:orientation="horizontal" android:background="#fff" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <TextView android:text="更新时间"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+
+        <TextView style="@style/me_item_text40" android:gravity="center_vertical|right" android:background="@drawable/bg_layout" android:text="2018.05.11 14:21:03" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="处置规则"
+        android:background="@color/bg_grey"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:text="-储值22元送3元\n-储值22元送3元\n-储值22元送3元"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="储值规则备注"
+        android:background="@color/bg_grey"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:padding="@dimen/dp_10"
+        android:text="备注备注备注备注备注备注备注备注备注"/>
+</LinearLayout>

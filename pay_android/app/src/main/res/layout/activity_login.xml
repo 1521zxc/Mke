@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/login_layout"
+    android:orientation="vertical"
+    android:background="@color/appHeaderColor"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center">
+
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_height="@dimen/dp_100"
+            android:layout_width="@dimen/dp_100"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:src="@drawable/login_icon"
+            android:layout_marginTop="@dimen/dp_40"
+            android:id="@+id/icon"/>
+
+        <EditText
+            android:background="@drawable/corner_white"
+            android:id="@+id/account"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/dp_20"
+            android:textColorHint="@color/textColor_grey"
+            android:hint="请输入您的账号"
+            android:layout_height="@dimen/dp_40"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_50"/>
+        <EditText
+            android:background="@drawable/corner_white"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_50"
+            android:id="@+id/password"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/textColor_grey"
+            android:paddingLeft="@dimen/dp_20"
+            android:hint="请输入密码"
+            android:password="true"
+            android:layout_height="@dimen/dp_40"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="@dimen/sp_12"
+            android:text="骏骐E支付商户可直接登陆，无需注册"/>
+        <TextView
+            android:layout_height="@dimen/dp_45"
+            android:layout_width="fill_parent"
+            android:text="登录"
+            android:layout_marginTop="@dimen/dp_50"
+            android:id="@+id/login"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#fff"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:gravity="center"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/dp_50"
+            android:textSize="@dimen/sp_14"
+            android:id="@+id/find_pass"
+            android:textColor="#fff"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</LinearLayout>

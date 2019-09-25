@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alert_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.epay.activity.RecomActivity">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/textColor_white"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000"
+            android:padding="@dimen/dp_5"
+            android:background="#fff"
+            android:text="分享到"
+            />
+        <GridView
+            android:id="@+id/fenxiang_gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:listSelector="@android:color/transparent" />
+    </LinearLayout>
+</RelativeLayout>

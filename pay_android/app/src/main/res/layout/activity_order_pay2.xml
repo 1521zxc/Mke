@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.OrderPayActivity2">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#325dc0">
+
+        <ImageView style="@style/title_img" />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_weight="1"
+            android:text="结账" />
+
+        <TextView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textColor="@color/textColor_white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/epa_zhe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/epa_zhe_text"
+            style="@style/me_item_text"
+            android:singleLine="true"
+            android:text="打折" />
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="@dimen/dp_150"-->
+        <!--android:text="￥："/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/epa_zhe_text_money"-->
+        <!--android:layout_width="@dimen/dp_150"-->
+        <!--android:layout_height="@dimen/dp_36"-->
+        <!--android:layout_marginLeft="@dimen/dp_170"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:background="@drawable/corner_white"-->
+        <!--android:paddingLeft="@dimen/dp_20"/>-->
+        <ImageView style="@style/btn_arrow" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd" />
+
+    <FrameLayout
+        android:id="@+id/epa_mo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/epa_mo_text"
+            style="@style/me_item_text"
+            android:singleLine="true"
+            android:text="抹零" />
+
+        <ImageView style="@style/btn_arrow" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd" />
+
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/membership_certification_order_pay_tv"
+            style="@style/me_item_text"
+            android:singleLine="true"
+            android:text="会员认证" />
+
+        <ImageView style="@style/btn_arrow" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/coupon_order_pay_tv"
+            style="@style/me_item_text"
+            android:singleLine="true"
+            android:text="优惠券" />
+
+        <ImageView style="@style/btn_arrow" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd" />
+
+    <FrameLayout
+        android:id="@+id/activty_order_pay_frameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/activty_order_pay_tv"
+            style="@style/me_item_text"
+            android:singleLine="true"
+            android:text="活动优惠" />
+
+        <ImageView style="@style/btn_arrow" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/activty_order_pay_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="需收款￥：" />
+
+        <TextView
+            android:id="@+id/epa_zhe_text_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:text="优惠￥："
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/epa_zhe_text_money1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_pay_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_30"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/order_pay_type_listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_weight="1"
+            android:divider="@null"></ListView>
+
+        <TextView
+            android:id="@+id/pay_type_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="#fa602d"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/textColor_white"
+            android:textSize="@dimen/sp_18" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/pay_type_tui"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="#fa602d"
+        android:gravity="center"
+        android:text="退款"
+        android:textColor="@color/textColor_white"
+        android:textSize="@dimen/sp_18"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.SetMealActivity">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appHeaderColor">
+        <ImageView style="@style/title_img" />
+        <TextView
+            android:id="@+id/set_meal_name"
+            style="@style/title_text"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="刷新"
+            android:textColor="@color/textColor_white" />
+    </FrameLayout>
+            <ListView
+                android:id="@+id/set_meal_listView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </ListView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColor_grey2"/>
+
+
+    <TextView
+        android:id="@+id/set_meal_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center"
+        android:text="确定"/>
+</LinearLayout>

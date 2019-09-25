@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.InvoiceActivity">
+    <FrameLayout android:background="#325dc0" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img"/>
+
+        <TextView android:text="发票打印码" style="@style/title_text"  android:layout_weight="1"/>
+
+        <ImageView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" android:layout_gravity="right"/>
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/invoice_code_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/qrbg">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor_white"
+            android:gravity="center"
+            android:text="扫码开票"
+            android:textSize="@dimen/sp_30"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/corner_white"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_30"
+            android:padding="@dimen/dp_10"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/invoice_code_img"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:background="@drawable/index_epay"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_10">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appHeaderColor"
+                    android:textSize="@dimen/sp_10"
+                    android:text="便捷支付 从此开始"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appHeaderColor"
+                    android:textSize="@dimen/sp_8"
+                    android:text="由骏骐科技提供技术服务"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:textColor="@color/appHeaderColor"
+                    android:textSize="@dimen/sp_8"
+                    android:text="4001-8585-01"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/invoice_cun"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:textSize="@dimen/sp_20"
+        android:text="保存到相册"
+        android:textColor="#fff"
+        android:background="#d33333"
+        android:gravity="center"/>
+</LinearLayout>

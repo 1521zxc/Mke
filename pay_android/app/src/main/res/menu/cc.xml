@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/screen"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_1"
+            android:icon="@drawable/ic_me_home"
+            android:title="我的账户信息"/>
+    </group>
+    <group
+        android:id="@+id/other"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_2"
+            android:icon="@drawable/ic_item"
+            android:title="店铺签约信息" />
+        <item
+            android:id="@+id/item_3"
+            android:icon="@drawable/ic_item2"
+            android:title="店铺收款码" />
+        <item
+            android:id="@+id/item_4"
+            android:icon="@drawable/ic_item3"
+            android:title="点餐码" />
+        <item
+            android:id="@+id/item_5"
+            android:icon="@drawable/ic_item4"
+            android:title="发票打印码" />
+        <item
+            android:id="@+id/item_6"
+            android:icon="@drawable/ic_item"
+            android:title="我的银行卡" />
+        <item
+            android:id="@+id/item_7"
+            android:visible="false"
+            android:icon="@drawable/ic_item"
+            android:title="我的服务" />
+        <item
+            android:id="@+id/item_8"
+            android:icon="@drawable/ic_item7"
+            android:title="推荐给好友" />
+        <item
+            android:id="@+id/item_9"
+            android:icon="@drawable/ic_item8"
+            android:title="联系客服" />
+        <item
+            android:id="@+id/item_10"
+            android:icon="@drawable/ic_item9"
+            android:title="设置" />
+        <item
+            android:id="@+id/item_11"
+            android:icon="@drawable/ic_item10"
+            android:title="退出" />
+    </group>
+
+</menu>

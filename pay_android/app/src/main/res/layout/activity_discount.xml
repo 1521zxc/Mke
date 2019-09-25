@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.DiscountActivity">
+    <FrameLayout android:background="#325dc0" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView  style="@style/title_img"/>
+
+        <TextView android:text="优惠码" style="@style/title_text"  android:layout_weight="1"/>
+
+        <TextView android:layout_height="fill_parent" android:gravity="center" android:layout_width="@dimen/dp_60"  android:layout_gravity="right"  />
+    </FrameLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:paddingLeft="@dimen/dp_20"
+        android:background="@drawable/corner_white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/up_service_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="#fb5c5c"
+        android:gravity="center"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/textColor_white"
+        android:text="确认使用"/>
+</LinearLayout>

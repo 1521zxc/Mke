@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.VerificationActivity">
+
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img"/>
+
+        <TextView android:text="验证账户" style="@style/title_text"  android:layout_weight="1"/>
+
+        <ImageView android:id="@+id/verifi_help" android:src="@drawable/icon_help" android:layout_height="@dimen/dp_25"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_17.5"
+            android:layout_marginRight="@dimen/dp_17.5"
+            android:layout_gravity="right"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="基本信息" />
+        <TextView
+            android:id="@+id/verifi_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/textColor_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:text="1234566"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd"
+        android:text="基本信息" />
+    <LinearLayout
+        android:orientation="horizontal" android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20" android:background="@color/textColor_white" android:layout_height="wrap_content" android:layout_width="fill_parent" >
+            <EditText
+                android:id="@+id/verifi_code"
+                android:hint="请输入收到的短信验证码"
+                android:layout_height="@dimen/dp_50"
+                android:background="@android:drawable/screen_background_light"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+            <com.example.epay.view.TimeButton
+                android:id="@+id/verifi_get"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:gravity="center"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd"
+        android:text="基本信息" />
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/verifi_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/appHeaderColor"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/textColor_white"
+        android:textSize="@dimen/sp_20"/>
+</LinearLayout>

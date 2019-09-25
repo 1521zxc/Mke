@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.epay.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_60"/>
+
+    <LinearLayout
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:id="@+id/tab01"
+            style="@style/tab"
+            android:drawableTop="@drawable/tab01_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/tab02"
+            style="@style/tab"
+            android:drawableTop="@drawable/tab02_selector"
+            android:text="消息" />
+
+        <RadioButton
+            android:id="@+id/tab03"
+            style="@style/tab"
+            android:drawableTop="@drawable/tab03_selector"
+            android:text="我的" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.AddMembershipActivity">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_60"
+        android:background="@color/appHeaderColor">
+
+        <ImageView style="@style/title_img" />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_weight="1"
+            android:text="添加会员" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/dp_17.5"
+            android:layout_marginRight="@dimen/dp_17.5" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/add_members_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:hint="请输入姓名"
+        android:background="@drawable/corner_white_small" />
+
+    <EditText
+        android:id="@+id/add_members_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_20"
+        android:hint="请输入手机号"
+        android:background="@drawable/corner_white_small" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/rz_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="@color/appHeaderColor"
+        android:gravity="center"
+        android:text="添加会员"
+        android:textColor="@color/textColor_white"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.MemberManageActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gradient">
+        <ImageView style="@style/title_img" />
+        <TextView
+            style="@style/title_text"
+            android:layout_weight="1"
+            android:background="@color/desk5"
+            android:text="会员充值统计" />
+        <ImageView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textColor_white">
+        <LinearLayout
+            android:id="@+id/MemberManage_day_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/MemberManage_day_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="日" />
+            <TextView
+                android:id="@+id/MemberManage_day_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/appHeaderColor1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MemberManage_week_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/MemberManage_week_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周" />
+            <TextView
+                android:id="@+id/MemberManage_week_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MemberManage_month_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/MemberManage_month_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="月" />
+            <TextView
+                android:id="@+id/MemberManage_month_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MemberManage_ji_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/MemberManage_ji_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="季" />
+            <TextView
+                android:id="@+id/MemberManage_ji_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MemberManage_year_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/MemberManage_year_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="年" />
+            <TextView
+                android:id="@+id/MemberManage_year_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/MemberManage_last_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="前一天" />
+        <TextView
+            android:id="@+id/MemberManage_time_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="3"
+            android:background="@color/textColor_white"
+            android:gravity="center"
+            android:text="" />
+        <TextView
+            android:id="@+id/MemberManage_h_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="后一天" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:background="@color/textColor_grey2">
+                <TextView
+                    android:id="@+id/member_manage_total_recharge_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_90"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/textColor_white"
+                    android:background="#ffad23"
+                    android:text="总充值\n973.00"/>
+                <TextView
+                    android:id="@+id/member_manage_general_presentation_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_90"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/textColor_white"
+                    android:background="#f54b70"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="总赠送\n0.00"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textColor_white"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="充值总额与昨日的对比"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"/>
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/member_manage_total_recharge_bc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_260"
+                    android:padding="@dimen/dp_20">
+                </com.github.mikephil.charting.charts.BarChart>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textColor_white"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="赠送总额与昨日的对比"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"/>
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/member_manage_total_gift_bc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_260">
+                </com.github.mikephil.charting.charts.BarChart>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

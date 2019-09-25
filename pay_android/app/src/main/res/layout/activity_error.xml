@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.ErrorActivity">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView style="@style/title_img"/>
+        <TextView  android:text="异常监控" style="@style/title_text"  android:layout_weight="1"/>
+        <TextView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" android:gravity="center" android:textColor="@color/textColor_white" android:layout_gravity="right" android:text="刷新"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textColor_white">
+        <LinearLayout
+            android:id="@+id/error_day_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/error_day_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="日"/>
+            <TextView
+                android:id="@+id/error_day_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/appHeaderColor1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/error_week_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/error_week_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周"/>
+            <TextView
+                android:id="@+id/error_week_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/error_month_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/error_month_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="月"/>
+            <TextView
+                android:id="@+id/error_month_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/error_ji_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/error_ji_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="季"/>
+            <TextView
+                android:id="@+id/error_ji_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/error_year_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/error_year_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="年"/>
+            <TextView
+                android:id="@+id/error_year_h"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textColor_grey"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/error_last_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="前一天"/>
+        <TextView
+            android:id="@+id/error_time_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="3"
+            android:background="@color/textColor_white"
+            android:gravity="center"
+            android:text="2018年10月17日"/>
+        <TextView
+            android:id="@+id/error_h_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="后一天"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:gravity="center_vertical"
+                android:background="@color/textColor_white">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="异常操作金额总计"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="470.58"/>
+            </LinearLayout>
+
+            <lecho.lib.hellocharts.view.ColumnChartView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_260"
+                >
+            </lecho.lib.hellocharts.view.ColumnChartView>
+
+            <com.example.epay.view.EPayGridView
+                android:id="@+id/error_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.example.epay.view.EPayGridView>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

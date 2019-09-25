@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.epay.activity.ExchangeActivity"
+    android:orientation="vertical">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView style="@style/title_img"/>
+        <TextView android:id="@+id/code_title" android:text="礼品兑换" style="@style/title_text"  android:layout_weight="1"/>
+        <ImageView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" android:layout_gravity="right"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:hint="请输入兑换码"
+            android:background="@android:drawable/screen_background_light"/>
+        <TextView
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center"
+            android:background="@color/textColor_white"
+            android:layout_marginLeft="3px"
+            android:text="兑换"/>
+        <TextView
+            android:id="@+id/exchange_qr"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:padding="@dimen/dp_8"
+            android:gravity="center"
+            android:background="@color/appHeaderColor"
+            android:drawableLeft="@drawable/ic_gathering"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="还没有会员兑换礼品"
+        android:drawableTop="@drawable/change_icon"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

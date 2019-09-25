@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.epay.activity.StatisticActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_gradient"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10">
+                    <!--<RelativeLayout-->
+                    <!--android:layout_width="@dimen/dp_80"-->
+                    <!--android:layout_height="@dimen/dp_80"-->
+                    <!--android:id="@+id/fl_back"-->
+                    <!--android:orientation="horizontal">-->
+                    <ImageView style="@style/title_img" />
+                    <!--</RelativeLayout>-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/statistic_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dp_140"
+                            android:text=""
+                            android:gravity="center"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/textColor_white"
+                            android:textSize="@dimen/sp_16" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/statistic_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:paddingRight="@dimen/dp_20"
+                        android:text="刷新"
+                        android:textColor="@color/textColor_white" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/statistic_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="今日()预收入"
+                            android:textColor="@color/textColor_white"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/statistic_time_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/textColor_white"
+                            android:textSize="@dimen/sp_20" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/statistic_discount_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:gravity="center"
+                        android:text="优惠金额\n0.00"
+                        android:textColor="@color/textColor_white"
+                        android:textSize="@dimen/sp_14" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_70">
+
+                    <TextView
+                        android:id="@+id/statistic_jie_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="已结金额\n0.00"
+                        android:textColor="@color/textColor_white"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/statistic_no_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="未结金额\n0.00"
+                        android:textColor="@color/textColor_white"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/statistic_num"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="就餐人数\n0/0"
+                        android:textColor="@color/textColor_white"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_70">
+
+                    <TextView
+                        android:id="@+id/statistic_zuo_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="昨日收入\n0.00"
+                        android:textColor="@color/textColor_white"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/statistic_qi_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="本周累计\n0.00"
+                        android:textColor="@color/textColor_white"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/statistic_month_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="本月累计\n0.00"
+                        android:textColor="@color/textColor_white"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_70"
+                    android:layout_marginBottom="@dimen/dp_20">
+
+                    <TextView
+                        android:id="@+id/statistic_qi_time_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="上周本日\n0.00"
+                        android:textColor="@color/textColor_white"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/statistic_zuo_qi_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="上周累计\n0.00"
+                        android:textColor="@color/textColor_white"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/statistic_zuo_month_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="上月累计\n0.00"
+                        android:textColor="@color/textColor_white"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textColor_white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:text="近八日营业收入趋势"
+                    android:textColor="@color/textColor_grey" />
+                <!--<com.github.mikephil.charting.charts.LineChart-->
+                <!--android:id="@+id/chart"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/dp_160"-->
+                <!--android:layout_marginLeft="@dimen/dp_15"-->
+                <!--android:layout_marginRight="@dimen/dp_15"-->
+                <!--android:layout_marginBottom="@dimen/dp_20"-->
+                <!--android:background="@color/textColor_white"/>-->
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_160"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:background="@color/textColor_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_grey"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="@dimen/dp_5"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@color/appHeaderColor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="营业情况"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_70">
+
+                <LinearLayout
+                    android:id="@+id/business_daily"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/business_daily" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:text="营业日报" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/desk_manage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="11dp"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@drawable/desk_manage" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:text="实时桌台" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/e_manage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:background="@drawable/e_manage" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:text="异常监控" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_70"
+                android:layout_marginTop="@dimen/dp_2">
+
+                <LinearLayout
+                    android:id="@+id/money_manage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/money_manage" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:text="收款情况" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cata_manage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@drawable/cata_manage" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:text="菜品销售" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cata_re"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/cata_re" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:text="畅销菜品" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_grey"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="@dimen/dp_5"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@color/appHeaderColor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="经营指标"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_70">
+
+                <TextView
+                    android:id="@+id/new_money"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:text="营业额" />
+
+                <TextView
+                    android:id="@+id/new_people"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:text="客流量" />
+
+                <LinearLayout
+                    android:id="@+id/new_more"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/new_more" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:text="更多指标" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_grey"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="@dimen/dp_5"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@color/appHeaderColor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="运营情况"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60">
+
+                <LinearLayout
+                    android:id="@+id/member_all"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/member_all" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:text="我的会员" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/new_member"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:background="@drawable/new_member" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:text="会员充值" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/member_content"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:background="@color/textColor_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="19dp"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/member_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:text="食客评价" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dp_70"-->
+            <!--android:layout_marginTop="@dimen/dp_2">-->
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="明星服务员"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginLeft="@dimen/dp_2"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginLeft="@dimen/dp_2"/>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

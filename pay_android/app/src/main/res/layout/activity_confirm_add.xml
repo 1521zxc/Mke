@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.ConfirmAddActivity">
+    <FrameLayout android:background="#325dc0" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView style="@style/title_img"/>
+        <TextView  android:text="订单确认" style="@style/title_text"  android:layout_weight="1"/>
+        <ImageView android:layout_height="fill_parent" android:layout_width="@dimen/dp_50" android:layout_gravity="right"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="已点菜单"
+                android:gravity="center"/>
+            <ListView
+                android:id="@+id/order_cata_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/text2"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="此次点餐"
+                android:gravity="center"/>
+            <ListView
+                android:id="@+id/add_cata_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20">
+        <TextView
+            android:id="@+id/quxiao"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#eba112"
+            android:text="取消"
+            android:textColor="@color/textColor_white"/>
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#fa602d"
+            android:textColor="@color/textColor_white"
+            android:text="加菜"/>
+    </LinearLayout>
+</LinearLayout>

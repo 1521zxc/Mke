@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.epay.activity.UpEnvelopeContActivity"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="@dimen/dp_60" android:layout_width="fill_parent">
+        <ImageView  style="@style/title_img"/>
+        <TextView android:text="红分享包-随机金额" style="@style/title_text"  android:layout_weight="1"/>
+        <TextView
+            android:layout_height="@dimen/dp_25"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_17.5"
+            android:layout_marginRight="@dimen/dp_17.5"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appHeaderColor"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="预算与红包设置"
+        android:textSize="@dimen/sp_16"/>
+    <TextView android:layout_width="match_parent"  android:layout_height="1px"  android:background="#ddd"/>
+
+    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="@dimen/dp_10" android:background="@color/textColor_white">
+
+        <TextView android:text="总预算"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+
+        <EditText android:id="@+id/cont_money_all" android:layout_width="@dimen/dp_40" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c"  android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="元"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"  android:layout_height="1px"  android:background="#ddd"/>
+    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="@dimen/dp_10" android:background="@color/textColor_white">
+
+        <TextView android:text="随机金额范围"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+
+        <EditText android:id="@+id/cont_money_small" android:layout_width="@dimen/dp_40" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c" android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="元-"/>
+        <EditText android:id="@+id/cont_money_old" android:layout_width="@dimen/dp_40" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c" android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="元"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"  android:layout_height="1px"  android:background="#ddd"/>
+
+    <TextView
+        android:layout_width="match_parent" android:gravity="center" android:layout_height="wrap_content" android:textColor="#fd5c5c" android:layout_marginTop="@dimen/dp_10" android:text="预计发出322个红包"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appHeaderColor"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:textSize="@dimen/sp_16"
+        android:text="领取与使用"/>
+
+    <TextView android:layout_width="match_parent"  android:layout_height="1px"  android:background="#ddd"/>
+    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="@dimen/dp_10" android:background="@color/textColor_white">
+
+        <TextView android:text="领取条件"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="微信支付"/>
+        <EditText android:id="@+id/cont_money_lingqu" android:layout_width="@dimen/dp_40" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c" android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="元以上可领取"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"  android:layout_height="1px"  android:background="#ddd"/>
+
+    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="@dimen/dp_10" android:background="@color/textColor_white">
+
+        <TextView android:text="使用条件"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="微信支付"/>
+        <EditText android:id="@+id/cont_money_shi" android:layout_width="@dimen/dp_40" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c" android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="元以上可使用"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"  android:layout_height="1px"  android:background="#ddd"/>
+
+    <TextView android:layout_width="match_parent"  android:layout_height="1px" android:layout_marginTop="@dimen/dp_20"  android:background="#ddd"/>
+
+    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="@dimen/dp_10" android:background="@color/textColor_white">
+
+        <TextView android:text="红包生效时间"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="红包领取后"/>
+        <TextView android:text="即刻生效" android:layout_width="wrap_content" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c" android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout"  />
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"  android:layout_height="1px"  android:background="#ddd"/>
+
+    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="@dimen/dp_10" android:background="@color/textColor_white">
+
+        <TextView android:text="红包有效时间"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="领取后"/>
+        <EditText android:id="@+id/cont_money_time" android:layout_width="@dimen/dp_40" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c" android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="天内可用"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/envelope_cont_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="#fd5c5c"
+        android:textColor="@color/textColor_white"
+        android:textSize="@dimen/sp_20"
+        android:gravity="center"
+        android:text="提交预览"/>
+</LinearLayout>

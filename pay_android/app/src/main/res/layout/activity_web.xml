@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.WebActivity">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img"/>
+
+        <TextView android:id="@+id/webView_title" android:text="划款详情" style="@style/title_text"  android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/share"
+            android:layout_height="@dimen/dp_30"
+            android:layout_width="@dimen/dp_30"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_gravity="right"
+            android:gravity="center">
+
+            <ImageView  android:layout_height="@dimen/dp_20"
+                android:layout_width="@dimen/dp_20"  android:src="@drawable/web_share"/>
+        </LinearLayout>
+
+
+        <TextView android:id="@+id/editWit"  android:layout_height="@dimen/dp_30" android:layout_width="@dimen/dp_30" android:layout_marginTop="10dp"  android:layout_marginRight="@dimen/dp_50" android:layout_gravity="right" android:text="编辑" android:textColor="#ffffff" android:gravity="center"/>
+
+    </FrameLayout>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</LinearLayout>

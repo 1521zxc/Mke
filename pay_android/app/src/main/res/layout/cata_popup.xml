@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/textColor_white">
+    <com.example.epay.view.EPayHListView
+        android:id="@+id/cata_popup_listView"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="wrap_content">
+    </com.example.epay.view.EPayHListView>
+
+</LinearLayout>

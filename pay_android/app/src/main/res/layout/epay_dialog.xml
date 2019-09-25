@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/epay_dialog_layout"
+    android:layout_gravity="center"
+    android:layout_width="@dimen/dp_50"
+    android:layout_height="@dimen/dp_50"
+    android:background="@drawable/progress_dialog_white"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/loadingIv"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_ani"/>
+</LinearLayout>

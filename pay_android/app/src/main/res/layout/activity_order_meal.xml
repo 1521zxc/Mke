@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.OrderMealActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_50">
+
+        <LinearLayout
+            android:id="@+id/order_meal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#325dc0">
+
+                <ImageView style="@style/title_img" />
+
+                <TextView
+                    style="@style/title_text"
+                    android:layout_weight="1"
+                    android:text="点餐" />
+
+                <ImageView
+                    android:id="@+id/order_meal_reach"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:src="@drawable/serch"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/order_meal_listView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color6" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@color/textColor_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:id="@+id/order_meal_listView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/order_meal_titile"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/textColor_white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_meal_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#325dc0">
+                <ImageView
+                    style="@style/title_img"
+                    android:layout_marginBottom="@dimen/dp_10" />
+                <EditText
+                    android:id="@+id/search_edit"
+                    style="@style/title_text"
+                    android:layout_height="@dimen/dp_25"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_white"
+                    android:gravity="start"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:singleLine="true"
+                    android:textColor="@color/desk3" />
+                <TextView
+                    android:id="@+id/search_speech"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/dp_15"
+                    android:text="语音"
+                    android:visibility="gone"
+                    android:textColor="@color/textColor_white"
+                    android:textSize="@dimen/sp_14" />
+            </FrameLayout>
+
+            <ListView
+                android:id="@+id/order_meal_search_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/order_meal_speech"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:background="#fe6138"
+            android:visibility="gone"
+            android:textColor="@color/textColor_white"
+            android:text="语音"/>
+        <TextView
+            android:id="@+id/order_meal_speech_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="@color/text2"
+            android:textColor="@color/textColor_white"
+            android:text="录音"/>
+        <LinearLayout
+            android:id="@+id/order_meal_cata"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@color/text2">
+
+            <FrameLayout
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_33"
+                    android:layout_gravity="center"
+                    android:background="@drawable/order_cata" />
+
+                <TextView
+                    android:id="@+id/order_meal_num"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/corner_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/textColor_white"
+                    android:textSize="@dimen/sp_10" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/order_meal_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="总价：￥0.0"
+                android:textColor="@color/textColor_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_meal_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#fe6138"
+            android:gravity="center"
+            android:text="选好了"
+            android:textColor="@color/textColor_white" />
+    </LinearLayout>
+</FrameLayout>

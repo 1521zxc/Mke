@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E5F523F-2441-42AB-A9F5-406F2D83E544}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeviceDecode</RootNamespace>
+    <AssemblyName>DeviceDecode</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\ee\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\x86\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B5BAE6952A799C4BCDD100B1FEC59557641C8D59</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DeviceDecode_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="websocket-sharp-with-proxy-support, Version=1.0.2.28248, Culture=neutral, PublicKeyToken=5660b08a1845a91e, processorArchitecture=MSIL">
+      <HintPath>..\packages\websocket-sharp-with-proxy-support.1.9.1\lib\net35-client\websocket-sharp-with-proxy-support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllocationDesk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllocationDesk.Designer.cs">
+      <DependentUpon>AllocationDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoSizeFormClass.cs" />
+    <Compile Include="ButtonChild.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChangeDesk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeDesk.Designer.cs">
+      <DependentUpon>ChangeDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckBoxChild.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cp.cs" />
+    <Compile Include="CpAttribution.cs" />
+    <Compile Include="desk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="desk.Designer.cs">
+      <DependentUpon>desk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeskInfo.cs" />
+    <Compile Include="DetailItem.cs" />
+    <Compile Include="Discount.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs" />
+    <Compile Include="order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="order.Designer.cs">
+      <DependentUpon>order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderInfo.cs" />
+    <Compile Include="orderOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderOperation.Designer.cs">
+      <DependentUpon>orderOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStatisticsInfo.cs" />
+    <Compile Include="PanelChild.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="pay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pay.Designer.cs">
+      <DependentUpon>pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaySimple.cs" />
+    <Compile Include="PayType.cs" />
+    <Compile Include="PPDriver.cs" />
+    <Compile Include="Print.cs" />
+    <Compile Include="PrintDocumentChild.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProdAttrItem.cs" />
+    <Compile Include="ProductItem.cs" />
+    <Compile Include="ReserveSimple.cs" />
+    <Compile Include="statement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statement.Designer.cs">
+      <DependentUpon>statement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsItem.cs" />
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfo.cs" />
+    <EmbeddedResource Include="AllocationDesk.resx">
+      <DependentUpon>AllocationDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeDesk.resx">
+      <DependentUpon>ChangeDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desk.resx">
+      <DependentUpon>desk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order.resx">
+      <DependentUpon>order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderOperation.resx">
+      <DependentUpon>orderOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pay.resx">
+      <DependentUpon>pay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="statement.resx">
+      <DependentUpon>statement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DeviceDecode_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20180514120746.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20180514120751.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20180514120757.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20180514121617.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khd_01_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khd_25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20180514133155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20180514133140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20180514182755.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20180514183002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khd_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20180514191504.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khd_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khd_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khd_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khd_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khd_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20180525142429.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20180525142419.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\ispaynoservice.png" />
+    <None Include="Resources\ispay.png" />
+    <None Include="Resources\noDeatail.png" />
+    <None Include="Resources\微信图片_20180718192114.png" />
+    <None Include="Resources\reserve_noserve.png" />
+    <None Include="Resources\nullState.png" />
+    <None Include="Resources\eat_noservice.png" />
+    <None Include="Resources\eatreserve.png" />
+    <None Include="Resources\eatState.png" />
+    <None Include="Resources\微信图片_20180628165657.png" />
+    <None Include="Resources\微信图片_20180628162336.png" />
+    <None Include="Resources\微信图片_20180628154215.png" />
+    <None Include="Resources\微信图片_20180628152145.png" />
+    <None Include="Resources\微信图片_20180628134428.png" />
+    <None Include="Resources\微信图片_20180628114036.png" />
+    <None Include="Resources\微信图片_20180628114028.png" />
+    <None Include="Resources\微信图片_20180628114025.png" />
+    <None Include="Resources\微信图片_20180628114020.png" />
+    <None Include="Resources\微信图片_20180626192931.png" />
+    <None Include="Resources\微信图片_20180625191008.png" />
+    <None Include="Resources\微信图片_20180622103254.png" />
+    <None Include="Resources\微信图片_20180622103249.png" />
+    <None Include="Resources\微信图片_20180619094532.png" />
+    <None Include="Resources\微信图片_20180610162505.png" />
+    <None Include="Resources\微信图片_20180610162502.png" />
+    <None Include="Resources\微信图片_20180610162507.png" />
+    <None Include="Resources\微信图片_20180612194220.png" />
+    <None Include="Resources\微信图片_20180612194215.png" />
+    <None Include="Resources\微信图片_20180612194226.png" />
+    <None Include="Resources\nopay.png" />
+    <None Include="Resources\微信图片_20180611110136.png" />
+    <None Include="Resources\微信图片_20180611110133.png" />
+    <None Include="Resources\微信图片_20180610191157.png" />
+    <None Include="Resources\微信图片_20180610191206.png" />
+    <None Include="Resources\微信图片_20180514181406.png" />
+    <None Include="Resources\微信图片_20180610162454.png" />
+    <None Include="Resources\微信图片_20180610162451.png" />
+    <None Include="Resources\微信图片_20180610162448.png" />
+    <None Include="Resources\微信图片_20180610162457.png" />
+    <None Include="Resources\微信图片_20180610155951.png" />
+    <None Include="Resources\微信图片_20180610155953.png" />
+    <None Include="Resources\微信图片_20180610120238.png" />
+    <None Include="Resources\微信图片_20180610120357.png" />
+    <None Include="Resources\微信图片_20180610120354.png" />
+    <None Include="Resources\微信图片_20180610120352.png" />
+    <None Include="Resources\微信图片_20180610113230.png" />
+    <None Include="Resources\微信图片_20180610113225.png" />
+    <None Include="Resources\微信图片_20180608112459.png" />
+    <None Include="Resources\微信图片_20180608111758.png" />
+    <None Include="Resources\微信图片_20180605144827.png" />
+    <None Include="Resources\微信图片_20180604192142.png" />
+    <None Include="Resources\微信图片_20180604192138.png" />
+    <None Include="Resources\微信图片_20180604173542.png" />
+    <None Include="Resources\微信图片_20180604173539.png" />
+    <None Include="Resources\微信图片_20180604173532.png" />
+    <None Include="Resources\微信图片_20180604173544.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.epay.activity.TransferActivity"
+    android:orientation="vertical">
+    <FrameLayout android:background="#325dc0" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img"/>
+
+        <TextView android:text="划款记录" style="@style/title_text"  android:layout_weight="1"/>
+
+        <ImageView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" android:layout_gravity="right"/>
+
+    </FrameLayout>
+    <ListView
+        android:id="@+id/transfer_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#0000"
+        android:dividerHeight="1px">
+
+    </ListView>
+
+</LinearLayout>

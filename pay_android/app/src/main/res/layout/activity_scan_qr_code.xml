@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/scan_bg"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView">
+    <SurfaceView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/surfaceView"/>
+
+    <!-- 扫描框上面的布局 -->
+    <FrameLayout  android:id="@+id/scan_top" android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img" />
+
+        <TextView  android:text="扫码收款" style="@style/title_text"  android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/scan_light" android:layout_height="@dimen/dp_25"
+        android:layout_width="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_17.5"
+        android:layout_marginRight="@dimen/dp_17.5"
+        android:layout_gravity="right"
+            android:drawableLeft="@drawable/light_btn"
+        android:button="@null"/>
+
+    </FrameLayout>
+
+    <TextView  android:background="@color/scan_bg"  android:layout_below="@id/scan_top" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:id="@+id/top_mask" android:text="请扫描消费者的付款码完成收款" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20"/>
+    <!-- 扫描框底部的布局 -->
+
+
+
+    <LinearLayout android:background="@color/scan_bg1"
+        android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:id="@+id/bottom_layout" android:paddingBottom="16dp"
+        android:orientation="vertical" android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/scan_hint"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_20"
+            android:layout_centerHorizontal="true"
+            android:background="@color/scan_bg"
+            android:textColor="#fb5c5c"
+            android:text="money"/>
+    <TextView
+        android:id="@+id/scan_line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/textColor_white"/>
+
+        <TextView
+            android:id="@+id/iv_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_gather"
+            android:text="切换收款方式"
+            android:paddingLeft="@dimen/dp_100"
+            android:paddingRight="@dimen/dp_100"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:visibility="gone"
+            android:textColor="@color/textColor_white" />
+
+</LinearLayout>
+    <!-- 扫描框中间的布局 -->
+    <RelativeLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/top_mask"
+        android:layout_above="@id/bottom_layout"
+        android:id="@+id/scan_center">
+
+    <ImageView android:background="@color/scan_bg"
+        android:layout_height="match_parent"
+        android:layout_width="34dp"
+        android:id="@+id/iv_left_mask"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/app_name"/>
+
+    <ImageView android:background="@color/scan_bg"
+        android:layout_height="match_parent"
+        android:layout_width="34dp"
+        android:id="@+id/iv_right_mask"
+        android:layout_alignParentRight="true"/>
+
+
+    <RelativeLayout android:background="@android:color/transparent"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/rl_crop_view"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/iv_left_mask"
+        android:layout_toLeftOf="@id/iv_right_mask">
+
+    <ImageView
+        android:background="@drawable/scanning_line"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/capture_scan_line"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_alignParentTop="true"/>
+
+    <com.example.epay.QRCode.defineview.MyImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/scan_image"/>
+
+</RelativeLayout>
+
+
+</RelativeLayout>
+
+</RelativeLayout>

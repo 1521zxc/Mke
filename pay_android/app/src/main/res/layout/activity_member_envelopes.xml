@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.epay.activity.MemberEnvelopesActivity"
+    android:orientation="vertical">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="@dimen/dp_60" android:layout_width="fill_parent">
+
+        <ImageView  style="@style/title_img"/>
+
+        <TextView android:text="会员红包" style="@style/title_text"  android:layout_weight="1"/>
+
+        <TextView
+            android:layout_height="@dimen/dp_25"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_17.5"
+            android:layout_marginRight="@dimen/dp_17.5"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/member_envelopes_activity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/tab_color"
+            android:gravity="center"
+            android:text="进行中"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/member_envelopes_end"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/tab_color"
+            android:gravity="center"
+            android:text="已结束"
+            android:button="@null"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent" android:layout_height="1px" android:background="@color/bg_grey" />
+    <ListView
+        android:id="@+id/member_envelopes_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+    <LinearLayout
+        android:id="@+id/member_envelopes_null"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:background="#ffcdcd"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:padding="@dimen/dp_20">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fb5c5c"
+            android:gravity="center"
+            android:text="点击“创建红包活动” 开始创建一个微信支付红包"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/member_envelopes_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="#fb5c5c"
+        android:gravity="center"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/textColor_white"
+        android:text="创建红包活动"/>
+</LinearLayout>

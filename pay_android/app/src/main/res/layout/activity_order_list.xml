@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.OrderListActivity">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appHeaderColor">
+        <ImageView style="@style/title_img" />
+        <TextView
+            android:id="@+id/code_title"
+            style="@style/title_text"
+            android:layout_weight="1"
+            android:text="订单列表" />
+
+        <EditText
+            android:id="@+id/search_edit"
+            style="@style/title_text"
+            android:layout_height="@dimen/dp_25"
+            android:layout_weight="1"
+            android:background="@drawable/corner_white"
+            android:gravity="start"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/dp_10"
+            android:singleLine="true"
+            android:textColor="@color/desk3"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/order_meal_reach"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="right|center_vertical"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:src="@drawable/serch"
+            />
+    </FrameLayout>
+    <com.aspsine.irecyclerview.IRecyclerView
+        android:id="@+id/order_manage_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:loadMoreEnabled="true"
+        app:refreshEnabled="false"
+        />
+</LinearLayout>

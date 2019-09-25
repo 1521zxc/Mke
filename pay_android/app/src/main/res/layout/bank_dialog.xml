@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_white"
+    android:gravity="center"
+    android:padding="@dimen/dp_20"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appHeaderColor"
+        android:text="变更注意事项"/>
+    <TextView
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text="1.为了您的资金安全，银行账号信息需要审核后方可生效。"/>
+    <TextView
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="2.在更改银行卡帐号生效期间，会影响新卡到账，审核成功后新卡划款正常，请放心资金安全。"/>
+    <TextView
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="3.不建议在账户能正常收款的情况下修改银行卡信息，如果您提交了变更银行卡账户信息申请，本公司有权向您索取银行挂失说明函，以确保您的资金安全。"/>
+    <TextView
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="4.如有疑问，请咨询客服。"/>
+    <TextView
+        android:id="@+id/bank_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor_white"
+        android:background="@drawable/corner_blue"
+        android:layout_marginTop="@dimen/dp_40"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="了解并继续"/>
+
+</LinearLayout>

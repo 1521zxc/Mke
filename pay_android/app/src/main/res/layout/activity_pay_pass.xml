@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.PayPassActivity">
+    <FrameLayout android:background="#325dc0" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView style="@style/title_img"/>
+        <TextView android:id="@+id/pay_pass_title" android:text="支付密码" style="@style/title_text"  android:layout_weight="1"/>
+        <TextView  android:layout_height="fill_parent" android:layout_width="@dimen/dp_100" android:layout_gravity="right" android:gravity="center" android:text="" android:textColor="@color/textColor_white"/>
+    </FrameLayout>
+    <com.example.epay.view.PasswordView  android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/pwd_view" android:layout_alignParentBottom="true"/>
+</LinearLayout>

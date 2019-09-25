@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.OrderDeskChangeActivity">
+    <FrameLayout android:background="#325dc0" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView style="@style/title_img"/>
+        <TextView android:text="换桌台" style="@style/title_text"  android:layout_weight="1"/>
+        <TextView android:layout_height="fill_parent" android:layout_width="@dimen/dp_40" android:gravity="center" android:text="" android:layout_gravity="right" android:textColor="@color/textColor_white"/>
+    </FrameLayout>
+    <GridView
+        android:id="@+id/order_desk_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:background="#cccccc">
+    </GridView>
+    <TextView
+        android:id="@+id/order_desk_que"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:textColor="@color/textColor_white"
+        android:background="@color/desk1"
+        android:gravity="center"
+        android:textSize="@dimen/sp_18"
+        android:text="确定"/>
+</LinearLayout>

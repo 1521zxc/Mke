@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.WoMenActivity">
+
+    <FrameLayout android:background="#325dc0" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img"/>
+
+        <TextView android:text="关于我们" style="@style/title_text"  android:layout_weight="1"/>
+
+        <ImageView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" android:layout_gravity="right"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout android:background="@color/bg_grey" android:layout_height="0dp" android:layout_width="match_parent" android:orientation="vertical" android:layout_weight="4" android:gravity="center" android:paddingBottom="@dimen/dp_20" android:paddingTop="@dimen/dp_20">
+    <ImageView android:layout_height="0dp" android:layout_width="fill_parent" android:layout_weight="2" android:src="@drawable/icon"/>
+    <TextView android:layout_height="0dp" android:layout_width="fill_parent" android:text="骏骐商盟萌" android:layout_weight="1" android:gravity="center" android:id="@+id/wo_benv"/>
+</LinearLayout>
+    <!--<FrameLayout-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:paddingRight="@dimen/dp_10">-->
+        <!--<TextView-->
+            <!--android:text="版本更新"-->
+            <!--android:gravity="center_vertical|left"-->
+            <!--style="@style/me_item_text"/>-->
+        <!--<ImageView style="@style/btn_arrow"/>-->
+    <!--</FrameLayout>-->
+    <!--<FrameLayout-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:paddingRight="@dimen/dp_10">-->
+        <!--<TextView-->
+            <!--android:text="官网"-->
+            <!--android:gravity="center_vertical|left"-->
+            <!--style="@style/me_item_text"/>-->
+        <!--<ImageView style="@style/btn_arrow"/>-->
+    <!--</FrameLayout>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="北京骏骐科技有限责任公司 版权所有"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:text="Copyright © 2017 - 2018 JunqiTech"/>
+</LinearLayout>

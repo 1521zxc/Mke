@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.epay.activity.EnvelopeDataActivity"
+    android:orientation="vertical">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="@dimen/dp_60" android:layout_width="fill_parent">
+        <ImageView  style="@style/title_img"/>
+        <TextView android:text="新店开张，送红包" style="@style/title_text"  android:layout_weight="1"/>
+        <TextView
+            android:layout_height="@dimen/dp_25"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_17.5"
+            android:layout_marginRight="@dimen/dp_17.5"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_30"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor_white"
+                    android:text="消费分享红包"
+                    android:textSize="@dimen/sp_12"
+                    android:background="@drawable/corner_red"
+                    android:paddingTop="@dimen/dp_3"
+                    android:paddingBottom="@dimen/dp_3"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"/>
+                <TextView
+                    android:id="@+id/data_sy_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="活动已进行1天，距结束7天"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:orientation="horizontal"
+                android:background="@color/textColor_white">
+                <TextView
+                    android:id="@+id/data_share"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0次分享次数"/>
+                <TextView
+                    android:id="@+id/data_baog"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0次曝光次数"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent" android:layout_height="1px" android:background="#ddd"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:orientation="horizontal"
+                android:background="@color/textColor_white">
+                <TextView
+                    android:id="@+id/data_new_member"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0次新会员数"/>
+                <TextView
+                    android:id="@+id/data_h"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0次刺激消费"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent" android:layout_height="1px" android:background="#ddd"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/textColor_white">
+                <TextView
+                    android:id="@+id/data_sy_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余预算：500元"
+                    android:layout_marginTop="@dimen/dp_20"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="领取个数：0使用次数：0"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_20"/>
+                <TextView
+                    android:layout_width="match_parent" android:layout_height="1px" android:background="#ddd"/>
+                <CheckBox
+                    android:id="@+id/enve_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fd5c5c"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:button="@null"
+                    android:drawableRight="@drawable/enve_btn"
+                    android:paddingRight="@dimen/dp_240"
+                    android:text="查看红包详情"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent" android:layout_height="1px" android:background="#ddd"/>
+
+            <LinearLayout
+                android:id="@+id/data_lll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dp_10"
+                    android:orientation="vertical">
+                    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="@dimen/dp_10" >
+
+                        <TextView android:text="红包名称"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="新店开张"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="match_parent"  android:layout_height="1px"  android:background="#ddd"/>
+                    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="@dimen/dp_10" >
+
+                        <TextView android:text="总预算"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+                        <TextView   android:layout_width="wrap_content" android:gravity="center" android:layout_height="match_parent" android:text="500" android:textColor="#fd5c5c"    />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="元"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="match_parent"  android:layout_height="1px"  android:background="#ddd"/>
+                    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="@dimen/dp_10" >
+
+                        <TextView android:text="单个红包金额"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="最高"/>
+                        <TextView  android:text="6" android:layout_width="@dimen/dp_40" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c" android:textColorHint="@color/textColor_grey"   />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="元，最低"/>
+                        <TextView  android:text="2" android:layout_width="@dimen/dp_40" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c" android:textColorHint="@color/textColor_grey"   />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="元"/>
+                    </LinearLayout>
+
+                    <TextView android:layout_width="match_parent"  android:layout_height="1px"  android:background="#ddd"/>
+
+                    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="@dimen/dp_10" >
+
+                        <TextView android:text="预计发放"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+
+                        <TextView  android:text="500" android:layout_width="wrap_content" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c"   />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="个红包"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="match_parent"  android:layout_height="1px"  android:background="#ddd"/>
+                    <LinearLayout  android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="@dimen/dp_10" >
+
+                        <TextView android:text="活动时间"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+
+                        <TextView  android:text="2018.03.06" android:layout_width="wrap_content" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c"   android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="至"/>
+                        <TextView android:text="2018.03.06" android:layout_width="wrap_content" android:gravity="center" android:layout_height="match_parent" android:textColor="#fd5c5c"   android:textSize="@dimen/sp_14" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    android:padding="@dimen/dp_10"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*会员红包费用由商户承担，例如应收16.1元，顾客使用0.1元自主红包，商户实收16元。"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/appHeaderColor"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:text="红包使用规则"/>
+                    <TextView
+                        android:id="@+id/envelope_gz01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/envelope_gz02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/envelope_gz2"/>
+                    <TextView
+                        android:id="@+id/envelope_gz03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/envelope_gz04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="张贴宣传物料，营销效果更好"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="#fd5c5c"
+        android:textColor="@color/textColor_white"
+        android:textSize="@dimen/sp_20"
+        android:gravity="center"
+        android:text="下载宣传物料"/>
+</LinearLayout>

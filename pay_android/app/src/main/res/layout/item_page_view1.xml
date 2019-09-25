@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_40"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_40"
+    android:paddingRight="@dimen/dp_20">
+
+    <LinearLayout
+        android:id="@+id/page_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/page_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建消费饭后国宝"
+            android:layout_marginTop="@dimen/dp_240"
+            android:textColor="@color/textColor_white"
+            android:textSize="@dimen/sp_20"/>
+        <TextView
+            android:id="@+id/page_type_cont"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_60"
+            android:textColor="@color/textColor_white"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="创建消费饭后国宝,创建消费饭后国宝,创建消费饭后国宝,创建消费饭后国宝,创建消费饭后国宝"/>
+        <TextView
+            android:id="@+id/page_type_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor_white"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:background="@drawable/corner_orange"
+            android:text="开始创建"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor_white"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="看看使用效果"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/dp_10"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_cata_h_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text3"/>
+        <TextView
+            android:id="@+id/item_cata_h_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text3"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_cata_h_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/item_cata_h_reduct"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:background="@drawable/cata_reduct"
+                />
+            <TextView
+                android:id="@+id/item_cata_h_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:textColor="@color/text3"
+                android:text="0"/>
+            <TextView
+                android:id="@+id/item_cata_h_add"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:background="@drawable/cata_add"
+                />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/item_cata_h_gg"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="选规格"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textColor="@color/textColor_white"
+        android:background="@drawable/corner_red"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

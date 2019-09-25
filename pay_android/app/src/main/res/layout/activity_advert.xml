@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.epay.activity.AdvertActivity">
+    <ImageView
+        android:id="@+id/advert_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:id="@+id/pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.epay.view.CountDownProgressView
+            android:id="@+id/tv"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            app:textColor="@color/textColor_white"
+            app:progressColor="#fb5c5c"
+            app:circSolidColor="@android:color/transparent"
+            app:circFrameColor="@android:color/transparent"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+</FrameLayout>

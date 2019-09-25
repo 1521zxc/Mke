@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.AccountNameActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#325dc0">
+
+        <ImageView style="@style/title_img" />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_weight="1"
+            android:text="店铺名称" />
+        <TextView
+            android:id="@+id/account_up"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/textColor_white" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/account_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_180"
+        android:background="@drawable/corner_white"
+        android:gravity="start"
+        android:hint="请输入店铺名称" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:text="店铺名称命名规则"
+        android:textColor="@color/appHeaderColor" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="建议填写"
+        android:textColor="@color/appHeaderColor" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="店铺门头上的名称或者“个体户+商户姓名+经营项目”" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="注意："
+        android:textColor="@color/appHeaderColor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="1.与国家相关企业冲突或会引起歧义的收据名称不可以；" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="2.店铺名称不可以只写知名品牌名称，需要加上经营者姓名等相关联信息（如XXLV店/中国电信恒通店）；" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="3.不可只写商户个人姓名作为店铺名称；" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/up_account_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="#fb5c5c"
+        android:gravity="center"
+        android:text="确认使用"
+        android:textColor="@color/textColor_white"
+        android:textSize="@dimen/sp_20" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/corner_white"
+    android:padding="@dimen/dp_15"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/money"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_45"
+        android:digits="1234567890."
+        />
+    <TextView
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center"
+        android:text="确定"/>
+</LinearLayout>

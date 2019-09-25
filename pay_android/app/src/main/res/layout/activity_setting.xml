@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.SettingActivity">
+
+    <FrameLayout android:background="#325dc0" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <ImageView style="@style/title_img"/>
+
+        <TextView android:text="设置" style="@style/title_text"  android:layout_weight="1"/>
+
+        <ImageView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" android:layout_gravity="right"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/set_pass"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingRight="@dimen/dp_10">
+        <TextView
+            android:text="修改密码"
+            android:gravity="center_vertical|left"
+            style="@style/me_item_text"/>
+        <ImageView style="@style/btn_arrow"/>
+    </FrameLayout>
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent"/>
+    <FrameLayout
+        android:id="@+id/set_pay_pass"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingRight="@dimen/dp_10">
+        <TextView
+            android:text="修改支付密码"
+            android:gravity="center_vertical|left"
+            style="@style/me_item_text"/>
+        <ImageView style="@style/btn_arrow"/>
+    </FrameLayout>
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent"/>
+    <!--<FrameLayout-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:paddingRight="@dimen/dp_10">-->
+    <!--<TextView  android:text="语音播报" android:gravity="center_vertical|left" style="@style/me_item_text"/>-->
+    <!--<ImageView style="@style/btn_arrow"/>-->
+<!--</FrameLayout>-->
+    <!--<TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" android:text="基本信息"/>-->
+    <!--<FrameLayout-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:paddingRight="@dimen/dp_10">-->
+        <!--<TextView  android:text="常见问题" android:gravity="center_vertical|left" style="@style/me_item_text"/>-->
+        <!--<ImageView style="@style/btn_arrow"/>-->
+    <!--</FrameLayout>-->
+    <!--<TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />-->
+    <!--<FrameLayout-->
+        <!--android:id="@+id/set_my"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:paddingRight="@dimen/dp_10">-->
+        <!--<TextView  android:text="关于我们" android:gravity="center_vertical|left" style="@style/me_item_text"/>-->
+        <!--<ImageView style="@style/btn_arrow"/>-->
+    <!--</FrameLayout>-->
+    <!--<TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />-->
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingRight="@dimen/dp_10">
+        <TextView  android:text="版本号" android:gravity="center_vertical|left" style="@style/me_item_text"/>
+        <TextView android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:text="当前版本V1.0.8"
+             android:padding="@dimen/dp_15"/>
+    </FrameLayout>
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" android:text="基本信息"/>
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingRight="@dimen/dp_10">
+        <TextView android:id="@+id/epa_cashier" android:text="设置屏幕常亮" android:gravity="center_vertical|left" style="@style/me_item_text"/>
+        <com.example.epay.view.ToggleButton
+            android:id="@+id/set_toggle"
+            android:layout_height="@dimen/dp_30"
+            android:layout_width="@dimen/dp_60"
+            android:layout_gravity="center_vertical|right"
+            ></com.example.epay.view.ToggleButton>
+    </FrameLayout>
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" android:text="意见反馈"/>
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingRight="@dimen/dp_10">
+        <TextView android:id="@+id/set_bank" android:text="退出登录" android:gravity="center_vertical|left" android:textColor="#f28900" style="@style/me_item_text"/>
+        <ImageView style="@style/btn_arrow"/>
+    </FrameLayout>
+    <TextView android:background="#ddd" android:layout_height="2px" android:layout_width="fill_parent" android:text="基本信息"/>
+
+
+</LinearLayout>
+

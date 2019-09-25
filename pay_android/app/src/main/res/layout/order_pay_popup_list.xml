@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/split_line"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:background="@drawable/corner_white"
+        android:paddingRight="@dimen/dp_20">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="转台"/>
+            <TextView
+                android:id="@+id/popup_list_on"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:background="@drawable/turn_on"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/popup_list_desk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择新桌："/>
+            <LinearLayout
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/popup_list_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_20"
+                    android:textSize="@dimen/sp_9"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_stroke"
+                    android:textColor="@color/text2"
+                    android:paddingLeft="@dimen/dp_10"/>
+                <com.example.epay.view.EPayHListView
+                    android:id="@+id/popup_list_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                </com.example.epay.view.EPayHListView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/popup_list_que"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/textColor_white"
+            android:background="@drawable/corner_appcolor"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

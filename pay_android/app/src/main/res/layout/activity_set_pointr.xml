@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.SetPointrActivity">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView style="@style/title_img"/>
+        <TextView android:id="@+id/code_title" android:text="会员集点" style="@style/title_text"  android:layout_weight="1"/>
+        <ImageView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" android:layout_gravity="right"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_140"
+        android:background="@color/appHeaderColor1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/dp_5">
+            <TextView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:textColor="@color/textColor_white"
+                android:background="@drawable/corner_appcolor"
+                android:gravity="center"
+                android:text="1"/>
+            <TextView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:textColor="@color/textColor_white"
+                android:background="@drawable/corner_appcolor"
+                android:button="@null"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:gravity="center"
+                android:text="2"/>
+            <TextView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:textColor="@color/textColor_white"
+                android:background="@drawable/corner_appcolor"
+                android:button="@null"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:gravity="center"
+                android:text="3"/>
+            <TextView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:textColor="@color/textColor_white"
+                android:background="@drawable/corner_appcolor"
+                android:button="@null"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:gravity="center"
+                android:text="4"/>
+            <TextView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:textColor="@color/textColor_white"
+                android:background="@drawable/corner_appcolor"
+                android:button="@null"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:gravity="center"
+                android:text="\?"/>
+    </LinearLayout>
+    <LinearLayout  android:orientation="horizontal" android:background="#fff" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <TextView android:text="集点条件"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+
+        <TextView android:id="@+id/point_price" style="@style/me_item_textr40" android:gravity="center_vertical|right" android:textColorHint="@color/textColor_grey" android:text="@string/pointr_price" />
+
+    </LinearLayout>
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />
+    <LinearLayout  android:orientation="horizontal" android:background="#fff" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <TextView android:text="礼品详情"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+        <TextView  android:id="@+id/point_text" style="@style/me_item_textr40" android:gravity="center_vertical|right" android:textColorHint="@color/textColor_grey"  android:text="@string/pointr_text"/>
+
+    </LinearLayout>
+    <TextView android:background="#ddd" android:layout_height="1px" android:layout_width="fill_parent" />
+    <LinearLayout  android:orientation="horizontal"  android:background="#fff" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <TextView android:text="活动时间"  android:gravity="center_vertical|left" style="@style/me_item_text40"/>
+        <TextView android:id="@+id/point_time" style="@style/me_item_textr40" android:gravity="center_vertical|right" android:textColorHint="@color/textColor_grey" android:background="@drawable/bg_layout" android:text="2018.3.11-2018.3.11"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/dp_20"
+        android:gravity="center_horizontal"
+        android:background="@color/bg_grey"
+        android:text="会员在集点满额兑换礼品后，将自动重新集点"/>
+    <TextView
+        android:id="@+id/action_suss"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="bottom"
+        android:background="#fb5c5c"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/textColor_white" />
+</LinearLayout>

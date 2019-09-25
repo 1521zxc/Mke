@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.epay.activity.AddressActivity">
+    <FrameLayout android:background="@color/appHeaderColor" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView style="@style/title_img"/>
+        <TextView android:id="@+id/code_title" android:text="店铺地址" style="@style/title_text"  android:layout_weight="1"/>
+        <ImageView android:layout_height="fill_parent" android:layout_width="@dimen/dp_60" android:layout_gravity="right"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_300"
+            android:clickable="true">
+        </com.baidu.mapapi.map.MapView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/et_text"
+                    android:background="@drawable/edit_bg"
+                    android:hint="查找店铺/小区/大厦/学校等"
+                    android:drawableLeft="@drawable/sousuo"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingLeft="@dimen/dp_10"/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:id="@+id/bt_nutton"
+                    android:visibility="gone"/>
+        </LinearLayout>
+    </FrameLayout>
+    <com.example.epay.view.PxListView
+        android:id="@+id/address_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.example.epay.view.PxListView>
+
+</LinearLayout>

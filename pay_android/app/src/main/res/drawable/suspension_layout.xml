@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 第一层阴影 -->
+
+    <!--第二层前景 底偏移1dp -->
+    <item android:bottom="1dp">
+        <shape>
+            <solid android:color="#315cc2" />
+            <corners android:radius="7dp" />
+        </shape>
+    </item>
+</layer-list>
